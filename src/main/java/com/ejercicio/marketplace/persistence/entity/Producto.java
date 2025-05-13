@@ -1,6 +1,7 @@
 package com.ejercicio.marketplace.persistence.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 
 @Entity
@@ -31,6 +32,7 @@ public class Producto {
     private Boolean estado;
 
     @ManyToOne
+    @Getter
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
 

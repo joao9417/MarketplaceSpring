@@ -1,5 +1,7 @@
 package com.ejercicio.marketplace.domain;
 
+import lombok.Setter;
+
 public class Product {
 
     private int productId;
@@ -8,6 +10,7 @@ public class Product {
     private Double price;
     private int stock;
     private boolean active;
+    @Setter
     private Category category;
 
 
@@ -66,4 +69,5 @@ public class Product {
     public void setCategory(Category category) {
         this.category = category;
     }
+
 }

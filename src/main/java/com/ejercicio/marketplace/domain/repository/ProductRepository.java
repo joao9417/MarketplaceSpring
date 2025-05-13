@@ -1,9 +1,6 @@
 package com.ejercicio.marketplace.domain.repository;
 
-
-
 import com.ejercicio.marketplace.domain.Product;
-import com.ejercicio.marketplace.persistence.entity.Producto;
 
 import java.util.List;
 import java.util.Optional;
